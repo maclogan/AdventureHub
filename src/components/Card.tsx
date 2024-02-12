@@ -6,7 +6,7 @@ import { faHeart } from "@fortawesome/free-regular-svg-icons"
 const StyledCard = styled.div`
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: ${({theme}) => theme.borderRadius};
     background-color: #FFF;
     -webkit-box-shadow: 4px 8px 20px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 4px 8px 20px 0px rgba(0,0,0,0.25);

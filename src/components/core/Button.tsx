@@ -1,6 +1,13 @@
-export const Button = () => {
+interface ButtonProps {
+    text: string,
+    action: ()=>any
+    variant: "default" | "primary"
+
+}
+
+export const Button = ({text, action, variant}: ButtonProps) => {
     return(
-        <button></button>
+        <button onClick={action}>{text}</button>
     )
 }
 
